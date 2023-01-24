@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Numbers</title>
+    <style>
+        body {
+            font-size: 2em;
+            background-color: rgb(103, 103, 206);
+        }
+        input#text1, input#text2 {
+            width: 40px;
+            height: 30px;
+            margin-bottom: 20px;
+            font-size: large;
+            background-color: lightblue;
+            border: none;
+        }
+        input {
+            background-color: lightblue;
+            border: none;
+            width: 50px;
+            height: 30px;
+            font-size: large;
+        }
+    </style>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1>Adding Values</h1>
+    <input type="number" name="text1" id="text1"> +
+    <input type="number" name="text2" id="text2"> =
+    <input type="button" value="Sum" onclick="sum()">
+    <div id="res">Result</div>
+    <script>
+        function sum() {
+            var n1 = Number(document.getElementById('text1').value)
+            var n2 = Number(document.getElementById('text2').value)
+            var res = document.getElementById('res')
+            var s = n1 + n2
+            res.innerHTML = `The sum between ${n1} and ${n2} is ${s}`
+        }
+    </script>
+</body>
+</html>

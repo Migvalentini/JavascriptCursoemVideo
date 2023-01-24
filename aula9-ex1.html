@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM (Document Object Model)</title>
+    <style>
+        body {
+            background-color: rgb(123, 139, 184);
+            font: normal 15pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Starting my DOM Studies</h1>
+    <p>Here will appear the result</p>
+    <p>Learning to use <strong>DOM</strong> in Javascript</p>
+    <div id="msg" class="idk" name="div">Click me</div>
+    <script>
+        /*
+        DOM - Document Object Model
+
+        window
+            location - URL, actual page
+            document - actual document
+                html
+                    head 
+                        meta
+                        title
+                    body
+                        h1
+                        p
+                        p
+                            strong
+                        div
+            history - where did you come from, where will you go
+            etc...
+        SELECTING
+        - By Tag = getElementsByTagName()
+        - By ID = getElementByID()
+        - By name = getElementsByName()
+        - By Class = getElementsByClassName()
+        - By Selector = querySelector() or querySelectorAll()
+        */
+        var p1 = window.document.getElementsByTagName('p')[1] //0 - First Paragraph 1 - Second, etc
+        var byID = window.document.getElementById("msg")
+        var byName = window.document.getElementsByName("div")[0]
+        var byClass = window.document.getElementsByClassName("idk")[0]
+        var selector = window.document.querySelector('div#msg') // or .idk 
+
+        window.document.write(`Hi<br>${window.document.charset}<br>${window.document.URL}`)
+        window.document.write(`<br>${p1.innerText}`) // Gets just the text without the children and the formatting
+        window.document.write(`<br>${p1.innerHTML}`) // Gets all the HTMl, including the children tags
+        
+        p1.style.textAlign = 'center'
+        p1.style.color = 'yellow'
+        window.document.body.style.border = '3px solid black'
+        byID.style.background = 'blue'
+        byName.style.color = 'black'
+        byClass.innerText = 'Hello'
+        selector.style.margin = "10px"
+        
+        //window.document.getElementById("msg").innerText = "Hello!"
+    </script>
+</body>
+</html>

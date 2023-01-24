@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Handling</title>
+    <style>
+        body {
+            background-color: rgb(136, 136, 214);
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var name = window.prompt("What's is you name?")
+        var age = window.prompt("What's your age?")
+        document.write(`${name}, your name has ${name.length} letters <br>`)
+        document.write(`Upper Case: ${name.toUpperCase()} <br>`)
+        document.write(`Lowercase: ${name.toLowerCase()} <br>`)
+        document.write(`Your age with 2 decimal places is ${Number(age).toFixed(2)}<br>`)
+        document.write(`Your age with comma is ${age.replace('.',',')}<br>`)
+        document.write(`Your age in monetary mode is ${Number(age).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}<br>`)
+        document.write(`Your age in monetary mode is ${Number(age).toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})}<br>`)
+    </script>
+</body>
+</html>

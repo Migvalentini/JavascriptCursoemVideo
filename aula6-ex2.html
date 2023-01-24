@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Handling</title>
+    <style>
+        body {
+            background-color: rgb(138, 138, 218);
+        }
+        h1 {
+            font-size: 3em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <script>
+        var n1 = Number.parseFloat(window.prompt("Enter a number:")) //The prompt command return a string
+        var n2 = Number.parseFloat(window.prompt("Enter another number:")) //parseInt or parseFloat converts a string into number
+        var sum = n1 + n2
+        window.alert("The sum between " + n1 + " and " + n2 + " is " + sum)
+        window.alert("We can also use the Number command " + Number(sum))
+        window.alert("We can also use the String command to convert a number into a string: " + String(sum) + " or " + sum.toString())
+        // (number + number) for addiction
+        // (string + string) for concatenation
+
+        var name = "Miguel"
+        var age = 16
+        var language = "Javascript"
+        var phrase1 = "My name is " + name + ", I'm " + age + " and I'm learning Javascript"
+        var phrase2 = `My name is ${name}, I'm ${age} and I'm learning Javascript`
+        window.alert(`${phrase1} \n${phrase2}`)
+    </script>
+</body>
+</html>
