@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional</title>
+</head>
+<body>
+    <h1>Traffic Ticket System</h1>
+    Car Velocity: <input type="number" name="vel" id="vel" min="0"> km/h
+    <input type="button" value="Verify" onclick="calc()"> <br>
+    <div id="res">
+        
+    </div>
+    <script>
+        function calc() {
+            var txtvel = document.querySelector('input#vel')
+            var res = document.querySelector('div#res')
+            var vel = Number(txtvel.value)
+
+            res.innerHTML = `<p>Your current velocity is <strong>${vel}km/h</strong></p>`
+            if (vel > 60) {
+                res.innerHTML += `<strong>You were FINED!</strong>`
+            }
+            res.innerHTML += `<p>Always drive with the seat belt</p>`
+        }
+    </script>
+</body>
+</html>
