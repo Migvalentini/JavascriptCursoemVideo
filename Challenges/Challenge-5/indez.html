@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 5</title>
+</head>
+<body>
+    <h1>Calculating Change</h1>
+    <button onclick="calc()">
+        Calculate
+    </button>
+    <script>
+        function calc() {
+            var name = window.prompt('Enter what product you are shopping:')
+            var costs = Number(window.prompt(`Enter how much your ${name} costs: `))
+            var pay = Number(window.prompt(`Enter how much did you pay for your ${name}`))
+            var change = costs - pay
+            window.alert(`You bought ${name} that costs ${costs}$\nYou gave ${pay}$ and has received ${change}$`)
+        }
+    </script>
+</body>
+</html>
