@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Age Verifier</h1>
+    </header>
+    <section>
+        <p>
+            <label for="inumber">Year of Birth: </label>
+            <input type="number" name="number" id="inumber" min="0"> <br>
+        </p>
+        <p>
+            <input type="radio" name="sex" id="male" checked> <label for="male">Male</label>
+            <input type="radio" name="sex" id="female"> <label for="female">Female</label> <br>
+        </p>
+        <p>
+            <input type="submit" id="submit" value="Calculate" onclick="calc()">
+        </p>
+        <div id="res">
+            Complete the data above to see the result!
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Miguel Valentini</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
