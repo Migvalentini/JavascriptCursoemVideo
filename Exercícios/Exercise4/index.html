@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercise 1</title>
+    <title>Exercise 4</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body onload="load()">
+<body>
     <header>
-        <h1>Day Time</h1>
+        <h1>Multiplication Table</h1>
     </header>
     <section>
-        <div id="clockTxt">
-            <p>Now it's ? o'clock</p>
-        </div>
-        <div id="img">
-            <img src="images/day.jpg" alt="Day" id="photo">
+        <p>
+            <label for="number">Number: </label>
+            <input type="number" name="number" id="number">
+            <input type="button" value="Generate Table" onclick="generate()">
+        </p>
+        <div>
+            <select name="area" id="area" size="10">
+                <option>Enter a number above:</option>
+            </select>
         </div>
     </section>
     <footer>

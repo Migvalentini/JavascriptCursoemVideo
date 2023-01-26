@@ -7,13 +7,13 @@ function load() {
     
     clockTxt.innerHTML = `Now it's ${hour} hours and ${minutes} minutes`
     if (hour >= 0 && hour < 12) {
-        img.src = 'day.jpg'
+        img.src = 'images/day.jpg'
         document.body.style.background = '#2770C6'
     } else if (hour >= 12 && hour < 18) {
-        img.src = 'afternoon.jpg'
+        img.src = 'images/afternoon.jpg'
         document.body.style.background = '#622D0D'
     } else {
-        img.src = 'night.jpg'
+        img.src = 'images/night.jpg'
         document.body.style.background = '#0D0100'
     }
 }
