@@ -1,6 +1,8 @@
 /* 
 Arrays:
 let num = [0,1,2,3,etc]
+
+Arrays allows different types in the same array 
 */
 
 let num = [0,1,2,3]
