@@ -11,7 +11,7 @@ do {
 */
 
 var c_while = 1
-while (c_while <= 6) {
+while (c_while <= 5) {
     console.log(`Hello! [${c_while}]`)
     c_while++
 }
